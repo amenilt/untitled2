@@ -58,13 +58,13 @@ void MainWindow::on_pushButton_supprimer_clicked()
     {
         ui->tableView->setModel(cl.afficher());
         QMessageBox::information(nullptr,QObject::tr("ok"),
-                                 QObject::tr("ajout effectué\n" "click to exit."));
+                                 QObject::tr("suppression effectué\n" "click to exit."));
 
 
     }
     else {
         QMessageBox::critical(nullptr,QObject::tr("not ok"),
-                              QObject::tr("ajout non effectué.\n""click cancel to exit"),
+                              QObject::tr("suppression non effectué.\n""click cancel to exit"),
                               QMessageBox::Cancel);
 
 }
